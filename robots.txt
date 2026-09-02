@@ -1,0 +1,36 @@
+# =================================================================
+# Robots.txt pro AIOMARKETING.cz
+# Optimalizováno pro SEO vyhledávače a AI agenty (AEO)
+# =================================================================
+
+User-agent: *
+Allow: /
+
+# Explicitní povolení pro hlavní AI agenty a LLM crawlery
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Odkaz na kontextový soubor pro LLM
+# AI agenti zde najdou čistá data o projektu v Markdownu
+Link: </llms-full.txt>; rel="llms-full"
+
+# Odkazy na mapy webu pro běžné vyhledávače
+Sitemap: https://aiomarketing.cz/sitemap.xml

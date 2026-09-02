@@ -1,0 +1,39 @@
+# AIOMARKETING.cz - LLM & AI Agent Context File
+## Základní informace
+- **Název projektu:** AIOMARKETING.cz
+- **Hlavní poslání:** Optimalizace pro AI vyhledávače (AEO - Answer Engine Optimization) a budování digitální viditelnosti nové generace.
+- **Motto:** Pokud tě AI nenajde, neexistuješ.
+- **Zakladatel:** Mgr. Michal Míček LL.M. (expert na AI a vizionář, zakladatel vzdělávací platformy Edu Partners).
+- **Cílová skupina:** Firmy, značky a e-shopy, které chtějí být dohledatelné v odpovědích systémů jako ChatGPT, Google SGE, Perplexity či Claude.
+
+## Hlavní produkt: VISIBILITY PACK
+Ucelený balíček služeb pro zajištění stoprocentní AI a SEO viditelnosti:
+1. **AI-ready profil firmy:** Kompletní strukturovaná digitální identita uzpůsobená pro jazykové modely.
+2. **SEO + AEO optimalizace:** Propojení klasického vyhledávání s optimalizací pro přímé odpovědi umělé inteligence.
+3. **Strukturovaná data:** Implementace pokročilého značení Schema.org, kterému algoritmy rozumí.
+4. **Firemní PDF (AI čitelné):** Tvorba dokumentů a materiálů navržených pro snadnou indexaci a citování AI systémy.
+5. **LinkedIn Autorita:** Budování důvěryhodnosti a B2B dosahu skrze klíčové osobnosti firmy.
+6. **Recenze a důvěra:** Strategická správa reputace, která slouží jako primární signál kvality pro AI modely.
+
+## Jak projekt funguje (Proces)
+- **Krok 1 (Analýza):** Zjištění aktuálního stavu AI viditelnosti firmy a odhalení mezer v dohledatelnosti.
+- **Krok 2 (Tvorba AI profilu):** Strukturování firemních dat a obsahu tak, aby byl srozumitelný pro ChatGPT i Google.
+- **Krok 3 (Distribuce a optimalizace):** Propisování dat do klíčových systémů a kontinuální budování digitální autority.
+
+## Unikátní výhoda: Platforma Talentů
+Projekt AIOMARKETING.cz není běžná rigidní agentura. Funguje jako ekosystém propojující firmy s prověřenými specialisty a absolventy z kurzů **Edu Partners**.
+- Specialisté na SEO, AI a e-commerce realizují projekty s garancí kvality pod hlavičkou AIOMARKETING.cz.
+- Výhodou je extrémní rychlost realizace, škálovatelnost (od malých firem po velké projekty) a neustálý přístup k nejčerstvějšímu know-how.
+
+## Výsledky a statistiky
+- **350%** průměrný nárůst citací v AI systémech.
+- **12ms** rychlost indexace upravených dat.
+- **Top 3** standardní dosahované pozice v Google SGE.
+- Důvěřuje nám již **50+ firem** v České republice.
+
+## Kontaktní údaje a konverze
+- **Web:** https://aiomarketing.cz
+- **E-mail:** info@aiomarketing.cz
+- **Telefon:** +420 606 663 826
+- **Lokalita:** Praha, Česká republika
+- **Hlavní CTA:** Možnost získat nezávaznou analýzu AI viditelnosti do 24 hodin zdarma skrze kontaktní formulář (vyžaduje Jméno, E-mail, Telefon a URL adresu webu).
