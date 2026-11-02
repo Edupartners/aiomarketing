@@ -1,0 +1,32 @@
+# AIOMARKETING.cz
+
+> Tvorba webů pro malé firmy, ordinace a služby v České republice. Každý web je připravený pro AI asistenty a vyhledávače (strukturovaná data schema.org, soubor llms.txt), měří poptávky (kliknutí na telefon, e-mail, mapu) a klient každý měsíc dostává report v PDF. E-shopy nedělá.
+
+Služba společnosti Edu Partners s.r.o. (IČO 28660757, vzdělávací firma založená v roce 2011). Aktualizováno 2026-11-02.
+
+## Co klient dostane
+- Web na míru, rychlý na mobilu, s telefonem, adresou a otevírací dobou hned nahoře
+- Strukturovaná data (schema.org) a soubor llms.txt pro AI asistenty
+- Měření kliknutí na telefon, e-mail, mapu a otevřených dotazů v Google Analytics 4
+- Měsíční report v PDF s komentářem a 2–3 doporučeními
+- Drobné úpravy údajů během roku
+
+## Ceník (bez DPH, minimální doba měsíční péče 12 měsíců)
+- Start: web 14 900 Kč jednorázově, péče a report 1 490 Kč měsíčně
+- Růst: web 29 900 Kč jednorázově, 2 990 Kč měsíčně; navíc průběžné úpravy obsahu, 1 nový článek nebo odpověď měsíčně, kontrola zmínek v AI asistentech, čtvrtletní konzultace
+- PPC kampaně a grafika přes specialisty z lektorské sítě Edu Partners, cena podle rozsahu
+- Přesná cena se potvrzuje po úvodním hovoru
+
+## Reference
+- [ORTOCENTRUM®](https://www.ortocentrumov.cz/): síť ortopedických ambulancí v Ostravě a okolí, 4 weby, strukturovaná data, llms.txt, měření a automatický měsíční report
+- [michalmicek.cz](https://michalmicek.cz/): web zakladatele, strukturovaná data, llms.txt, záznam ve Wikidata
+
+## Co služba neslibuje
+- Nezaručuje, že firmu doporučí ChatGPT nebo jiný AI asistent. Zajišťuje úplné a pravdivé informace a měření.
+
+## Kontakt
+- Michal Míček, zakladatel
+- Telefon: +420 606 663 826
+- E-mail: michal.micek@edu-partners.cz
+- Úvodní hovor 20 minut zdarma
+- LinkedIn: https://www.linkedin.com/in/michalmicek/

@@ -1,841 +1,485 @@
-<!DOCTYPE html>
-<html lang="cs" class="scroll-smooth">
+<!doctype html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pomáháme firmám dostat se do odpovědí ChatGPT, Google SGE a dalších AI systémů. Získejte Visibility Pack a buďte vidět tam, kde se lidé ptají.">
-<meta name="keywords" content="AEO, SEO, AI marketing, optimalizace pro AI, ChatGPT, Google SGE, Michal Míček, digitální viditelnost">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIOMARKETING.cz | Weby pro firmy s měsíčním reportem a přípravou pro AI</title>
+<meta name="description" content="Postavíme vám web, připravíme ho pro Google i ChatGPT a každý měsíc vám pošleme report: kolik lidí přišlo, kolik volalo a co zlepšit. Weby pro malé firmy, ordinace a služby, ne e-shopy.">
+<link rel="canonical" href="https://aiomarketing.cz/">
+<meta name="author" content="Michal Míček">
 <meta name="robots" content="index, follow">
-<meta name="author" content="Mgr. Michal Míček LL.M.">
-
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aiomarketing.cz/">
-<meta property="og:title" content="AIOMARKETING.cz | Buď vidět pro lidi i AI">
-<meta property="og:description" content="Pokud tě AI nenajde, neexistuješ. Optimalizujeme firmy pro svět, kde přímé odpovědi dává umělá inteligence.">
-<meta property="og:image" content="https://aiomarketing.cz/michal.jpeg"> <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://aiomarketing.cz/">
-<meta property="twitter:title" content="AIOMARKETING.cz | Buď vidět pro lidi i AI">
-<meta property="twitter:description" content="Pokud tě AI nenajde, neexistuješ. Optimalizujeme firmy pro svět, kde odpovědi dává AI.">
-<meta property="twitter:image" content="https://aiomarketing.cz/michal.jpeg">
-
-    <title>AIOMARKETING.cz | Buď vidět pro lidi i AI</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0A0A0B;
-            color: white;
-            overflow-x: hidden;
-        }
-        .glass {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .text-gradient {
-            background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.5));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .neon-glow {
-            box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        [x-cloak] { display: none !important; }
-        
-        .step-number {
-            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
-            color: transparent;
-        }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#0A0A0B',
-                        accent: '#00F0FF',
-                    }
-                }
-            }
-        }
-    </script>
-    <script type="application/ld+json">
+<meta property="og:title" content="Web, který nosí poptávky. A každý měsíc vidíte kolik.">
+<meta property="og:description" content="Web pro vaši firmu, připravený pro Google i AI asistenty, s měsíčním reportem v PDF.">
+<meta property="og:image" content="https://aiomarketing.cz/assets/og-image.jpg">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231b1a17'/%3E%3Cpath d='M7 24 L16 8 L25 24' fill='none' stroke='%23f3efe6' stroke-width='3'/%3E%3Crect x='12' y='19' width='8' height='3' fill='%23c2410c'/%3E%3C/svg%3E">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="Informace pro AI asistenty">
+<link rel="preload" href="assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://aiomarketing.cz/#organization",
+      "@type": "ProfessionalService",
+      "@id": "https://aiomarketing.cz/#service",
       "name": "AIOMARKETING.cz",
-      "url": "https://aiomarketing.cz",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://aiomarketing.cz/michal.jpeg", 
-        "caption": "AIOMARKETING.cz Logo"
-      },
-      "image": "https://aiomarketing.cz/michal.jpeg",
-      "description": "Pomáháme firmám dostat se do odpovědí ChatGPT, Google SGE a dalších AI systémů. Budujeme digitální viditelnost nové generace.",
+      "url": "https://aiomarketing.cz/",
+      "image": "https://aiomarketing.cz/assets/og-image.jpg",
+      "description": "Tvorba webů pro malé firmy, ordinace a služby s přípravou pro AI asistenty (strukturovaná data, llms.txt), měřením poptávek a měsíčním reportem v PDF. Nedělá e-shopy.",
       "telephone": "+420606663826",
-      "email": "info@aiomarketing.cz",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Praha",
-        "addressCountry": "CZ"
+      "email": "michal.micek@edu-partners.cz",
+      "areaServed": { "@type": "Country", "name": "Česká republika" },
+      "knowsLanguage": "cs",
+      "founder": { "@id": "https://aiomarketing.cz/#michal" },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Edu Partners s.r.o.",
+        "taxID": "28660757",
+        "foundingDate": "2011"
       },
-      "founder": {
-        "@type": "Person",
-        "name": "Mgr. Michal Míček LL.M.",
-        "jobTitle": "Zakladatel",
-        "image": "https://aiomarketing.cz/michal.jpeg"
-      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Balíčky web + měsíční péče",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Start",
+            "description": "Web, příprava pro AI, měření a měsíční report. Minimální doba 12 měsíců.",
+            "priceSpecification": [
+              { "@type": "UnitPriceSpecification", "price": 14900, "priceCurrency": "CZK", "name": "Tvorba webu, jednorázově, bez DPH" },
+              { "@type": "UnitPriceSpecification", "price": 1490, "priceCurrency": "CZK", "unitText": "měsíc", "name": "Měsíční péče, bez DPH" }
+            ]
+          },
+          {
+            "@type": "Offer",
+            "name": "Růst",
+            "description": "Vše ze Startu, k tomu průběžné úpravy obsahu, jeden nový článek nebo odpověď měsíčně a čtvrtletní konzultace. Minimální doba 12 měsíců.",
+            "priceSpecification": [
+              { "@type": "UnitPriceSpecification", "price": 29900, "priceCurrency": "CZK", "name": "Tvorba webu, jednorázově, bez DPH" },
+              { "@type": "UnitPriceSpecification", "price": 2990, "priceCurrency": "CZK", "unitText": "měsíc", "name": "Měsíční péče, bez DPH" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://aiomarketing.cz/#michal",
+      "name": "Michal Míček",
+      "honorificPrefix": "Mgr.",
+      "honorificSuffix": "LL.M.",
+      "jobTitle": "Zakladatel AIOMARKETING.cz a Edu Partners",
+      "image": "https://aiomarketing.cz/assets/michal-micek.jpg",
+      "url": "https://michalmicek.cz/",
       "sameAs": [
-        "https://www.linkedin.com/company/aiomarketing-cz" 
+        "https://www.linkedin.com/in/michalmicek/",
+        "https://www.wikidata.org/wiki/Q139824678",
+        "https://michalmicek.cz/"
       ]
     },
     {
-      "@type": "WebSite",
-      "@id": "https://aiomarketing.cz/#website",
-      "url": "https://aiomarketing.cz",
-      "name": "AIOMARKETING.cz | Buď vidět pro lidi i AI",
-      "description": "Optimalizace pro AI vyhledávače (AEO) a moderní SEO. Získejte Visibility Pack pro vaši firmu.",
-      "publisher": {
-        "@id": "https://aiomarketing.cz/#organization"
-      },
-      "inLanguage": "cs"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://aiomarketing.cz/#webpage",
-      "url": "https://aiomarketing.cz",
-      "name": "AIOMARKETING.cz | Buď vidět pro lidi i AI",
-      "isPartOf": {
-        "@id": "https://aiomarketing.cz/#website"
-      },
-      "about": {
-        "@id": "https://aiomarketing.cz/#organization"
-      },
-      "description": "Pomáháme firmám dostat se do odpovědí ChatGPT, Google SGE a dalších AI systémů. Pokud tě AI nenajde, neexistuješ.",
-      "inLanguage": "cs"
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Děláte e-shopy?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Děláme prezentační weby pro firmy, ordinace a služby, kde je cílem telefonát, e-mail nebo návštěva. E-shopy vyžadují jiný provoz i podporu." } },
+        { "@type": "Question", "name": "Zaručíte, že mě doporučí ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Ne, to poctivě zaručit nejde. Zajistíme, aby o vás AI asistenti i Google měli úplné a aktuální informace ve formě, které rozumí, a měříme, co se na webu děje." } },
+        { "@type": "Question", "name": "Co je soubor llms.txt?", "acceptedAnswer": { "@type": "Answer", "text": "Textový soubor na vašem webu, který AI asistentům stručně a přehledně říká, kdo jste, co nabízíte, kde vás najdou a jak se objednat." } },
+        { "@type": "Question", "name": "Proč je minimální doba 12 měsíců?", "acceptedAnswer": { "@type": "Answer", "text": "Výsledky ve vyhledávání se projevují v řádu měsíců. Díky ročnímu závazku je navíc jednorázová cena za web nižší." } }
+      ]
     }
   ]
 }
 </script>
 </head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
 
-<body x-data="{ 
-    scrolled: false, 
-    mobileMenu: false, 
-    showModal: new URLSearchParams(window.location.search).get('status') === 'success', 
-    formSubmitted: new URLSearchParams(window.location.search).get('status') === 'success' 
-}" @scroll.window="scrolled = (window.pageYOffset > 20)">
-
-
- <!-- starý x-data
-<body x-data="{ scrolled: false, mobileMenu: false, showModal: false, formSubmitted: false }" @scroll.window="scrolled = (window.pageYOffset > 20)">
- -->
-    <!-- Navbar -->
-    <nav :class="scrolled ? 'py-4 glass' : 'py-6 bg-transparent'" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                    <i data-lucide="zap" class="text-black w-5 h-5 fill-current"></i>
-                </div>
-                <span class="text-xl font-bold tracking-tight">AIOMARKETING<span class="text-accent">.cz</span></span>
-            </div>
-
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
-                <a href="#aeo" class="hover:text-white transition-colors">AEO</a>
-                <a href="#visibility" class="hover:text-white transition-colors">Visibility Pack</a>
-                <a href="#how-it-works" class="hover:text-white transition-colors">Jak to funguje</a>
-                <a href="#talents" class="hover:text-white transition-colors">Talenty</a>
-                <a href="#about" class="hover:text-white transition-colors">Kdo za tím stojí</a>
-            </div>
-
-            <div class="hidden md:flex items-center gap-4">
-                <button class="px-5 py-2 rounded-full border border-white/10 hover:bg-white/5 transition-all text-sm font-medium">
-                    Přihlásit se
-                </button>
-                <button class="px-5 py-2 rounded-full bg-accent text-black font-bold text-sm hover:scale-105 transition-all neon-glow" @click="showModal = true">
-                    Získat analýzu
-                </button>
-            </div>
-
-            <button class="md:hidden text-white" @click="mobileMenu = !mobileMenu">
-                <i x-show="!mobileMenu" data-lucide="menu"></i>
-                <i x-show="mobileMenu" data-lucide="x"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div x-show="mobileMenu" x-transition x-cloak class="absolute top-full left-0 right-0 glass p-6 flex flex-col gap-4 md:hidden">
-            <a href="#aeo" class="text-lg font-medium" @click="mobileMenu = false">AEO</a>
-            <a href="#visibility" class="text-lg font-medium" @click="mobileMenu = false">Visibility Pack</a>
-            <a href="#how-it-works" class="text-lg font-medium" @click="mobileMenu = false">Jak to funguje</a>
-            <a href="#talents" class="text-lg font-medium" @click="mobileMenu = false">Talenti Edu</a>
-            <a href="#about" class="text-lg font-medium" @click="mobileMenu = false">Kdo za tím stojí</a>
-            <hr class="border-white/10">
-            <button class="w-full py-3 rounded-xl bg-accent text-black font-bold" @click="showModal = true; mobileMenu = false">Získat analýzu</button>
-        </div>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="AIOMARKETING.cz, úvod"><b>AIO</b>marketing.cz</a>
+    <nav class="nav" aria-label="Hlavní navigace">
+      <a href="#co-dostanete">Co dostanete</a>
+      <a href="#report">Měsíční report</a>
+      <a href="#reference">Reference</a>
+      <a href="#cenik">Ceník</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
+    <a class="top-call" href="tel:+420606663826" data-track="phone_click"><span>Zavolat </span>606 663 826</a>
+  </div>
+</header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="relative pt-40 pb-20 overflow-hidden">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10">
-                <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent/10 blur-[120px] rounded-full"></div>
-                <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full"></div>
-            </div>
+<main id="obsah">
 
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 100)" x-show="show" x-transition.duration.800ms>
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
-                        Budoucnost marketingu je tady
-                    </span>
-                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-[1.1]">
-                        Buď vidět pro <br>
-                        <span class="text-accent">lidi i AI</span>
-                    </h1>
-                    <p class="max-w-2xl mx-auto text-lg md:text-xl text-white/60 mb-10 leading-relaxed">
-                        Pomáháme lidem a firmám dostat se do odpovědí ChatGPT, Google SGE a dalších AI systémů. Pokud tě AI nenajde, neexistuješ.
-                    </p>
-                    
-                    <div class="flex items-center gap-4 justify-center mb-10">
-                        <div class="flex -space-x-3">
-                            <div class="w-10 h-10 rounded-full border-2 border-black overflow-hidden">
-                                <img src="https://picsum.photos/seed/face1/100/100" alt="Client" class="w-full h-full object-cover" referrerPolicy="no-referrer">
-                            </div>
-                            <div class="w-10 h-10 rounded-full border-2 border-black overflow-hidden">
-                                <img src="https://picsum.photos/seed/face2/100/100" alt="Client" class="w-full h-full object-cover" referrerPolicy="no-referrer">
-                            </div>
-                            <div class="w-10 h-10 rounded-full border-2 border-black overflow-hidden">
-                                <img src="https://picsum.photos/seed/face3/100/100" alt="Client" class="w-full h-full object-cover" referrerPolicy="no-referrer">
-                            </div>
-                            <div class="w-10 h-10 rounded-full border-2 border-black overflow-hidden">
-                                <img src="https://picsum.photos/seed/face4/100/100" alt="Client" class="w-full h-full object-cover" referrerPolicy="no-referrer">
-                            </div>
-                        </div>
-                        <div class="text-left">
-                            <div class="flex items-center gap-1">
-                                <i data-lucide="star" class="w-3 h-3 text-accent fill-current"></i>
-                                <i data-lucide="star" class="w-3 h-3 text-accent fill-current"></i>
-                                <i data-lucide="star" class="w-3 h-3 text-accent fill-current"></i>
-                                <i data-lucide="star" class="w-3 h-3 text-accent fill-current"></i>
-                                <i data-lucide="star" class="w-3 h-3 text-accent fill-current"></i>
-                            </div>
-                            <div class="text-xs text-white/60 font-medium">Důvěřuje nám 50+ firem v ČR</div>
-                        </div>
-                        <div class="w-px h-8 bg-white/10 mx-2"></div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full overflow-hidden border border-accent/30">
-                                <img src="michal.jpeg?auto=format&fit=crop&q=80&w=100&h=100" alt="Michal Míček" class="w-full h-full object-cover" referrerPolicy="no-referrer">
-                            </div>
-                            <div class="text-left">
-                                <div class="text-[10px] font-bold text-accent uppercase tracking-wider">Michal Míček</div>
-                                <div class="text-[10px] text-white/40">Zakladatel projektu</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <button class="w-full sm:w-auto px-8 py-4 rounded-full bg-accent text-black font-bold text-lg hover:scale-105 transition-all neon-glow flex items-center justify-center gap-2" @click="showModal = true">
-                            Získat VISIBILITY PACK <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                        </button>
-                        <button class="w-full sm:w-auto px-8 py-4 rounded-full border border-white/10 hover:bg-white/5 transition-all text-lg font-medium" @click="showModal = true">
-                            Nezávazná analýza zdarma
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Visual Element -->
-                <div class="mt-20 relative max-w-4xl mx-auto">
-                    <div class="glass rounded-3xl p-4 md:p-8 relative overflow-hidden group">
-                        <div class="flex items-center gap-4 mb-6 border-b border-white/10 pb-4">
-                            <div class="flex gap-1.5">
-                                <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
-                            </div>
-                            <div class="flex-1 bg-white/5 rounded-md py-1 px-3 text-xs text-white/30 text-left">
-                                https://chat.openai.com/search?q=nejlepsi-marketingova-agentura
-                            </div>
-                        </div>
-                        <div class="space-y-4 text-left">
-                            <div class="flex gap-3">
-                                <div class="w-8 h-8 rounded bg-accent/20 flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="cpu" class="w-4 h-4 text-accent"></i>
-                                </div>
-                                <div class="space-y-2 flex-1">
-                                    <div class="h-4 bg-white/10 rounded w-3/4"></div>
-                                    <div class="h-4 bg-white/10 rounded w-full"></div>
-                                    <div class="h-4 bg-white/10 rounded w-5/6"></div>
-                                </div>
-                            </div>
-                            <div class="pl-11">
-                                <div class="p-4 rounded-xl bg-accent/5 border border-accent/20 inline-block">
-                                    <div class="flex items-center gap-2 text-accent font-bold text-sm mb-1">
-                                        <i data-lucide="check-circle-2" class="w-4 h-4"></i> Doporučená firma
-                                    </div>
-                                    <div class="text-white font-medium">Vaše Firma s.r.o.</div>
-                                    <div class="text-white/50 text-xs">Specialista na AI-ready řešení a digitální viditelnost.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Floating badges -->
-                    <div class="absolute -top-6 -right-6 md:right-10 glass px-4 py-2 rounded-full text-xs font-bold text-accent animate-float">
-                        AEO Optimized
-                    </div>
-                    <div class="absolute top-1/2 -left-6 md:left-10 glass px-4 py-2 rounded-full text-xs font-bold text-white/80 animate-float" style="animation-delay: 1s;">
-                        Google SGE Ready
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Problem Section -->
-        <section id="aeo" class="py-24 bg-white/[0.02]">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div>
-                        <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                            Svět se mění. <br>
-                            <span class="text-white/40">SEO už nestačí.</span>
-                        </h2>
-                        <div class="space-y-8">
-                            <div class="flex gap-4">
-                                <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="search" class="w-6 h-6 text-accent"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Lidé přestávají hledat</h3>
-                                    <p class="text-white/60">Místo procházení desítek odkazů se lidé začínají ptát AI. ChatGPT, Claude a Perplexity dávají přímé odpovědi.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-4">
-                                <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="globe" class="w-6 h-6 text-accent"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Google se mění na odpovědi</h3>
-                                    <p class="text-white/60">S příchodem SGE (Search Generative Experience) Google sám generuje odpovědi. Pokud nejste v jeho zdroji, neexistujete.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-4">
-                                <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="bar-chart-3" class="w-6 h-6 text-accent"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold mb-2">Firmy bez struktury mizí</h3>
-                                    <p class="text-white/60">AI potřebuje strukturovaná data, aby vás pochopila. Bez správného AEO (Answer Engine Optimization) vás systémy ignorují.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="aspect-square glass rounded-[40px] p-8 flex flex-col justify-center items-center text-center">
-                            <div class="w-24 h-24 bg-accent/20 rounded-full flex items-center justify-center mb-6">
-                                <i data-lucide="shield-check" class="w-12 h-12 text-accent"></i>
-                            </div>
-                            <h4 class="text-3xl font-bold mb-4 italic">„Pokud tě AI nenajde, neexistuješ.“</h4>
-                            <p class="text-white/40 max-w-sm">Budujeme digitální viditelnost nové generace, která přežije revoluci v hledání.</p>
-                        </div>
-                        <!-- Decorative dots -->
-                        <div class="absolute -bottom-4 -right-4 w-24 h-24 grid grid-cols-4 gap-2 opacity-20">
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                            <div class="w-1.5 h-1.5 rounded-full bg-accent"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Solution Section -->
-        <section id="visibility" class="py-24">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">VISIBILITY PACK</h2>
-                    <p class="text-white/60 max-w-2xl mx-auto text-lg">
-                        Vše, co vaše firma potřebuje, aby byla dohledatelná v éře AI. Jeden balíček, nekonečná viditelnost.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Card 1 -->
-                    <div class="p-8 rounded-3xl glass hover:bg-white/10 transition-all group">
-                        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-black transition-all">
-                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">AI-ready profil firmy</h3>
-                        <p class="text-white/50 text-sm leading-relaxed">Kompletní digitální identita optimalizovaná pro velké jazykové modely.</p>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="p-8 rounded-3xl glass hover:bg-white/10 transition-all group">
-                        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-black transition-all">
-                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">SEO + AEO optimalizace</h3>
-                        <p class="text-white/50 text-sm leading-relaxed">Kombinace klasického vyhledávání a optimalizace pro odpovědi AI.</p>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="p-8 rounded-3xl glass hover:bg-white/10 transition-all group">
-                        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-black transition-all">
-                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Strukturovaná data</h3>
-                        <p class="text-white/50 text-sm leading-relaxed">Implementace Schema.org, která mluví jazykem algoritmů.</p>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="p-8 rounded-3xl glass hover:bg-white/10 transition-all group">
-                        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-black transition-all">
-                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Firemní PDF (AI čitelné)</h3>
-                        <p class="text-white/50 text-sm leading-relaxed">Dokumenty navržené tak, aby je AI snadno indexovala a citovala.</p>
-                    </div>
-                    <!-- Card 5 -->
-                    <div class="p-8 rounded-3xl glass hover:bg-white/10 transition-all group">
-                        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-black transition-all">
-                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Tvorba digitální autority</h3>
-                        <p class="text-white/50 text-sm leading-relaxed">Budování důvěryhodnosti osobnosti skrze optimalizované wwww.</p>
-                    </div>
-                    <!-- Card 6 -->
-                    <div class="p-8 rounded-3xl glass hover:bg-white/10 transition-all group">
-                        <div class="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent group-hover:text-black transition-all">
-                            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Recenze a důvěra</h3>
-                        <p class="text-white/50 text-sm leading-relaxed">Správa reputace, která je pro AI signálem kvality.</p>
-                    </div>
-                </div>
-
-                <div class="mt-16 text-center">
-                    <button class="px-10 py-5 rounded-full bg-accent text-black font-bold text-xl hover:scale-105 transition-all neon-glow" @click="showModal = true">
-                        Chci být vidět v AI
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works -->
-        <section id="how-it-works" class="py-24 bg-white/[0.02]">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <div class="max-w-xl">
-                        <h2 class="text-4xl md:text-5xl font-bold mb-4">Jak to funguje</h2>
-                        <p class="text-white/60">Cesta k AI viditelnosti je přímočará a efektivní.</p>
-                    </div>
-                    <div class="hidden md:block h-px flex-1 bg-white/10 mx-10 mb-6"></div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-12">
-                    <div class="relative">
-                        <div class="text-8xl font-black step-number absolute -top-10 -left-4 select-none">01</div>
-                        <div class="relative z-10">
-                            <h3 class="text-2xl font-bold mb-4">Analýza firmy</h3>
-                            <p class="text-white/50 leading-relaxed">Zjistíme, jak vás AI vidí dnes a kde jsou největší mezery v dohledatelnosti.</p>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="text-8xl font-black step-number absolute -top-10 -left-4 select-none">02</div>
-                        <div class="relative z-10">
-                            <h3 class="text-2xl font-bold mb-4">Vytvoření AI profilu</h3>
-                            <p class="text-white/50 leading-relaxed">Strukturujeme vaše data a obsah tak, aby byl srozumitelný pro ChatGPT i Google.</p>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="text-8xl font-black step-number absolute -top-10 -left-4 select-none">03</div>
-                        <div class="relative z-10">
-                            <h3 class="text-2xl font-bold mb-4">Distribuce + optimalizace</h3>
-                            <p class="text-white/50 leading-relaxed">Propisujeme data do klíčových systémů a budujeme vaši digitální autoritu.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Talent Platform -->
-        <section id="talents" class="py-24">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="glass rounded-[48px] p-8 md:p-16 overflow-hidden relative">
-                    <div class="absolute top-0 right-0 w-1/2 h-full bg-accent/5 blur-[100px] -z-10"></div>
-                    
-                    <div class="grid lg:grid-cols-2 gap-16 items-center">
-                        <div>
-                            <span class="text-accent font-bold uppercase tracking-widest text-sm mb-4 block">Lidé, ne agentura</span>
-                            <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                                Za projektem stojí <br>
-                                <span class="text-accent">talentovaní specialisté</span>
-                            </h2>
-                            <p class="text-white/60 text-lg mb-8 leading-relaxed">
-                                Naše platforma propojuje firmy s prověřenými absolventy kurzů Edu Partners. Jsou to specialisté na SEO, AI a e-commerce, kteří fungují jako "ruce a nohy" celého systému.
-                            </p>
-                            <ul class="space-y-4 mb-10">
-                                <li class="flex items-center gap-3">
-                                    <div class="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
-                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i>
-                                    </div>
-                                    <span class="font-medium">Ověřené dovednosti z Edu Partners</span>
-                                </li>
-                                <li class="flex items-center gap-3">
-                                    <div class="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
-                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i>
-                                    </div>
-                                    <span class="font-medium">Reálná praxe na klientských projektech</span>
-                                </li>
-                                <li class="flex items-center gap-3">
-                                    <div class="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center">
-                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-accent"></i>
-                                    </div>
-                                    <span class="font-medium">Garance kvality pod hlavičkou AIOMARKETING</span>
-                                </li>
-                            </ul>
-                            <button class="px-8 py-4 rounded-full bg-white text-black font-bold hover:bg-accent transition-all flex items-center gap-2">
-                                Chci se zapojit jako talent <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                            </button>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="space-y-4">
-                                <div class="aspect-[4/5] glass rounded-3xl overflow-hidden relative group">
-                                    <img src="https://picsum.photos/seed/person1/400/500" alt="Talent" class="w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity" referrerPolicy="no-referrer">
-                                    <div class="absolute bottom-4 left-4">
-                                        <div class="text-xs font-bold text-accent">SEO Specialist</div>
-                                        <div class="font-bold">Adam K.</div>
-                                    </div>
-                                </div>
-                                <div class="aspect-square glass rounded-3xl overflow-hidden relative group">
-                                    <img src="https://picsum.photos/seed/person2/400/400" alt="Talent" class="w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity" referrerPolicy="no-referrer">
-                                    <div class="absolute bottom-4 left-4">
-                                        <div class="text-xs font-bold text-accent">AI Content</div>
-                                        <div class="font-bold">Lucie M.</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="space-y-4 pt-8">
-                                <div class="aspect-square glass rounded-3xl overflow-hidden relative group">
-                                    <img src="https://picsum.photos/seed/person3/400/400" alt="Talent" class="w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity" referrerPolicy="no-referrer">
-                                    <div class="absolute bottom-4 left-4">
-                                        <div class="text-xs font-bold text-accent">AEO Expert</div>
-                                        <div class="font-bold">Petr S.</div>
-                                    </div>
-                                </div>
-                                <div class="aspect-[4/5] glass rounded-3xl overflow-hidden relative group">
-                                    <img src="https://picsum.photos/seed/person4/400/500" alt="Talent" class="w-full h-full object-cover opacity-50 group-hover:opacity-80 transition-opacity" referrerPolicy="no-referrer">
-                                    <div class="absolute bottom-4 left-4">
-                                        <div class="text-xs font-bold text-accent">E-commerce</div>
-                                        <div class="font-bold">Jana V.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-24 bg-white/[0.01]">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div class="relative">
-                        <div class="aspect-[4/5] rounded-[40px] overflow-hidden glass p-2 group">
-                            <img src="michal.jpeg?auto=format&fit=crop&q=80&w=800&h=1000" alt="Mgr. Michal Míček LL.M." class="w-full h-full object-cover rounded-[32px] grayscale group-hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        </div>
-                        <div class="absolute -bottom-6 -right-6 glass p-6 rounded-3xl neon-glow">
-                            <div class="text-accent font-bold text-xl">Zakladatel</div>
-                            <div class="text-white/60 text-sm">Vizionář & Expert na AI</div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <span class="text-accent font-bold uppercase tracking-widest text-sm mb-4 block">Kdo za tím stojí</span>
-                        <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                            Mgr. Michal Míček LL.M.
-                        </h2>
-                        <p class="text-white/70 text-lg mb-6 leading-relaxed">
-                            Jako zakladatel vzdělávací platformy <strong>Edu Partners</strong> jsem viděl tisíce studentů, kteří hledali cestu k reálnému uplatnění v digitálním světě. AIOMARKETING.cz vznikl jako logické vyústění této snahy.
-                        </p>
-                        <p class="text-white/60 mb-8 leading-relaxed">
-                            Věřím, že v éře umělé inteligence už nestačí jen "dělat marketing". Je potřeba stavět systémy, které jsou pro AI srozumitelné a pro lidi důvěryhodné. Naším cílem je propojit špičkové technologie s talenty, které jsme sami vychovali.
-                        </p>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                                    <i data-lucide="phone" class="text-accent w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <div class="text-white/40 text-sm">Přímý kontakt</div>
-                                    <a href="tel:+420606663826" class="text-xl font-bold hover:text-accent transition-colors">+420 606 663 826</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                                    <i data-lucide="globe" class="text-accent w-5 h-5"></i>
-                                </div>
-                                <div>
-                                    <div class="text-white/40 text-sm">Vzdělávání</div>
-                                    <div class="text-xl font-bold">Zakladatel Edu Partners</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Us -->
-        <section class="py-24 bg-white/[0.02]">
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold mb-4">Proč AIOMARKETING?</h2>
-                <p class="text-white/60 mb-16">Kombinujeme to nejlepší z technologií a lidského potenciálu.</p>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div>
-                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
-                            <i data-lucide="cpu" class="w-8 h-8 text-accent"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">AI-first přístup</h3>
-                        <p class="text-white/50 text-sm">Neflákáme to starými metodami. Vše stavíme na AI od základu.</p>
-                    </div>
-                    <div>
-                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
-                            <i data-lucide="users" class="w-8 h-8 text-accent"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Vzdělávání</h3>
-                        <p class="text-white/50 text-sm">Propojení s Edu Partners nám dává přístup k nejnovějšímu know-how.</p>
-                    </div>
-                    <div>
-                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
-                            <i data-lucide="zap" class="w-8 h-8 text-accent"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Rychlost</h3>
-                        <p class="text-white/50 text-sm">Díky naší platformě talentů realizujeme zakázky v rekordním čase.</p>
-                    </div>
-                    <div>
-                        <div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
-                            <i data-lucide="bar-chart-3" class="w-8 h-8 text-accent"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Škálovatelnost</h3>
-                        <p class="text-white/50 text-sm">Náš model roste s vámi. Od malých firem po velké e-shopy.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Results -->
-        <section class="py-24">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="p-10 glass rounded-3xl text-center">
-                        <div class="text-5xl font-bold text-accent mb-2">350%</div>
-                        <div class="text-white/60 font-medium">Nárůst citací v AI</div>
-                    </div>
-                    <div class="p-10 glass rounded-3xl text-center">
-                        <div class="text-5xl font-bold text-accent mb-2">12ms</div>
-                        <div class="text-white/60 font-medium">Rychlost indexace dat</div>
-                    </div>
-                    <div class="p-10 glass rounded-3xl text-center">
-                        <div class="text-5xl font-bold text-accent mb-2">Top 3</div>
-                        <div class="text-white/60 font-medium">Pozice v Google SGE</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-24">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="bg-gradient-to-br from-accent to-blue-600 rounded-[48px] p-12 md:p-20 text-center relative overflow-hidden">
-                    <div class="relative z-10">
-                        <h2 class="text-4xl md:text-6xl font-black text-black mb-8 leading-tight">
-                            Nenechte své jméno <br> zmizet z digitální mapy.
-                        </h2>
-                        <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                            <button class="w-full sm:w-auto px-10 py-5 rounded-full bg-black text-white font-bold text-xl hover:scale-105 transition-all shadow-2xl" @click="showModal = true">
-                                Získat VISIBILITY PACK
-                            </button>
-                            <button class="w-full sm:w-auto px-10 py-5 rounded-full bg-white/20 backdrop-blur-md text-black font-bold text-xl hover:bg-white/30 transition-all" @click="showModal = true">
-                                Rezervovat konzultaci
-                            </button>
-                        </div>
-                        <p class="mt-8 text-black/60 font-medium flex items-center justify-center gap-2">
-                            <i data-lucide="shield-check" class="w-5 h-5"></i> Nezávazná analýza do 24 hodin zdarma
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="py-20 border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-12 mb-16">
-                <div class="col-span-2">
-                    <div class="flex items-center gap-2 mb-6">
-                        <div class="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-                            <i data-lucide="zap" class="text-black w-5 h-5 fill-current"></i>
-                        </div>
-                        <span class="text-xl font-bold tracking-tight">AIOMARKETING<span class="text-accent">.cz</span></span>
-                    </div>
-                    <p class="text-white/40 max-w-sm mb-6">
-                        Budujeme digitální viditelnost nové generace. Optimalizujeme firmy pro svět, kde odpovědi dává AI.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-6">O projektu</h4>
-                    <ul class="space-y-4 text-white/40 text-sm">
-                        <li><a href="#" class="hover:text-accent transition-colors">Edu Partners</a></li>
-                        <li><a href="#" class="hover:text-accent transition-colors">Visibility Pack</a></li>
-                        <li><a href="#" class="hover:text-accent transition-colors">Pro talenty</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-6">Kontakt</h4>
-                    <ul class="space-y-4 text-white/40 text-sm">
-                        <li>info@aiomarketing.cz</li>
-                        <li><a href="tel:+420606663826" class="hover:text-accent transition-colors">+420 606 663 826</a></li>
-                        <li>Praha, Česká republika</li>
-                        <li><a href="https://www.linkedin.com/in/michalmicek/" class="text-accent font-bold">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-col md:row justify-between items-center pt-8 border-t border-white/5 text-white/20 text-xs gap-4">
-                <p>© 2026 AIOMARKETING.cz. Všechna práva vyhrazena.</p>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-white transition-colors">Ochrana údajů</a>
-                    <a href="#" class="hover:text-white transition-colors">VOP</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal Popup -->
-    <div x-show="showModal" 
-         x-transition:enter="transition ease-out duration-300"
-         x-transition:enter-start="opacity-0"
-         x-transition:enter-end="opacity-100"
-         x-transition:leave="transition ease-in duration-200"
-         x-transition:leave-start="opacity-100"
-         x-transition:leave-end="opacity-0"
-         class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
-         x-cloak>
-        
-        <div @click.away="showModal = false" 
-             class="glass w-full max-w-lg rounded-[32px] overflow-hidden relative animate-float"
-             style="animation-duration: 10s;">
-            
-            <button @click="showModal = false" class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-
-            <div class="p-8 md:p-12">
-                <div x-show="!formSubmitted">
-                    <h2 class="text-3xl font-bold mb-2">Získat analýzu zdarma</h2>
-                    <p class="text-white/50 mb-8 text-sm">Zanechte nám kontakt a my se vám ozveme s analýzou vaší AI viditelnosti.</p>
-
-
-
-
-<form action="poslat.php" method="POST" class="space-y-4">
+<section class="hero">
+  <div class="wrap">
     <div>
-        <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">Celé jméno</label>
-        <input type="text" name="jmeno" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="Jan Novák">
+      <p class="kicker">Weby pro malé firmy, ordinace a&nbsp;služby</p>
+      <h1>Web, který vám nosí poptávky. <em>A&nbsp;každý měsíc vidíte kolik.</em></h1>
+      <p class="lead">Postavíme vám rychlý web, připravíme ho tak, aby vás správně pochopil Google i&nbsp;ChatGPT, a&nbsp;měříme, kolik lidí z&nbsp;něj zavolá nebo napíše. Na začátku každého měsíce vám přijde report s&nbsp;čísly a&nbsp;doporučením, co zlepšit.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#kontakt">Domluvit úvodní hovor</a>
+        <a class="btn btn-ghost" href="assets/ukazka-mesicniho-reportu.pdf" data-track="report_download" download>Stáhnout ukázku reportu (PDF)</a>
+      </div>
+      <p class="hero-note">Úvodní hovor trvá 20 minut a&nbsp;je zdarma. Řekneme vám, co by váš web měl umět a&nbsp;kolik to bude stát.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">E-mail</label>
-            <input type="email" name="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="jan@firma.cz">
+    <figure class="sheet">
+      <picture>
+        <source srcset="assets/report-ukazka.webp" type="image/webp">
+        <img src="assets/report-ukazka.jpg" width="1100" height="1555" alt="Ukázka první strany měsíčního reportu: návštěvníci, kliknutí na telefon, podíl z mobilu, graf návštěv po dnech, zdroje návštěv a doporučení na další měsíc.">
+      </picture>
+      <figcaption class="mono">Takhle vypadá měsíční report. Čísla v&nbsp;ukázce jsou ilustrativní.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="wrap">
+    <p><strong>Jen weby</strong>Prezentační weby pro firmy a&nbsp;služby. E-shopy neděláme.</p>
+    <p><strong>Report každý měsíc</strong>PDF z&nbsp;Google Analytics s&nbsp;komentářem lidskou řečí.</p>
+    <p><strong>Za službou stojí Edu Partners</strong>Vzdělávací firma, která od roku 2011 učí lidi marketing a&nbsp;práci s&nbsp;AI.</p>
+  </div>
+</div>
+
+<section class="block" id="co-dostanete">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">01</div>
+      <div>
+        <h2>Co od nás dostanete</h2>
+        <p>Neprodáváme „online marketing“. Dostanete web, který dělá jednu věc: přivádí zákazníky k&nbsp;telefonu. A&nbsp;důkaz, že to funguje.</p>
+      </div>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <h3>Web, na kterém se lidé hned zorientují</h3>
+        <p>Telefon, adresa, otevírací doba a&nbsp;služby jsou vidět hned nahoře, hlavně na mobilu. Odtud k&nbsp;vám přichází většina lidí.</p>
+      </div>
+      <div class="row">
+        <h3>Web, kterému rozumí AI asistenti a&nbsp;Google</h3>
+        <p>Údaje o&nbsp;firmě zapíšeme ve strukturované podobě (schema.org) a&nbsp;přidáme soubor llms.txt. Když se někdo zeptá ChatGPT nebo Googlu, kdo ve vašem oboru a&nbsp;městě je, mají o&nbsp;vás správné a&nbsp;aktuální informace.</p>
+      </div>
+      <div class="row">
+        <h3>Měření toho, co přináší zákazníky</h3>
+        <p>Nesledujeme jen návštěvnost. Měříme kliknutí na telefon, e-mail a&nbsp;mapu a&nbsp;to, na co se lidé na webu nejčastěji ptají.</p>
+      </div>
+      <div class="row">
+        <h3>Měsíční report v&nbsp;PDF</h3>
+        <p>Čísla za minulý měsíc, srovnání s&nbsp;tím předchozím, komentář bez žargonu a&nbsp;2–3 konkrétní doporučení. Přijde e-mailem.</p>
+      </div>
+      <div class="row">
+        <h3>Drobné úpravy během roku</h3>
+        <p>Změnili jste otevírací dobu, ceník nebo přibyla služba? Napíšete nám a&nbsp;my to na webu upravíme.</p>
+      </div>
+    </div>
+    <div class="honest">
+      <strong>Co neslibujeme</strong>
+      <p>Nikdo vám poctivě nezaručí, že vás ChatGPT doporučí. My zajistíme, aby o&nbsp;vás měl úplné a&nbsp;pravdivé informace, a&nbsp;každý měsíc vám ukážeme, co se na webu skutečně děje.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="ai">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">02</div>
+      <div>
+        <h2>Takhle váš web mluví s&nbsp;umělou inteligencí</h2>
+        <p>Vedle běžného webu dostane každý klient soubor llms.txt: stručný přehled pro AI asistenty, bez reklamních řečí.</p>
+      </div>
+    </div>
+    <div class="split">
+      <div>
+        <ol>
+          <li><strong>Kdo jste a&nbsp;kde vás najdou.</strong> Název, adresy, pobočky, odkazy.</li>
+          <li><strong>Kdy máte otevřeno.</strong> Ordinační nebo otevírací hodiny po dnech.</li>
+          <li><strong>Co děláte.</strong> Služby tak, jak se na ně lidé ptají.</li>
+          <li><strong>Jak se objednat.</strong> Telefon, e-mail, podmínky, s&nbsp;kým máte smlouvu.</li>
+        </ol>
+        <p class="src">Ukázka vpravo je výňatek ze souboru, který jsme připravili pro síť ortopedických ambulancí ORTOCENTRUM® v&nbsp;Ostravě. Celý je veřejně na <a href="https://www.ortocentrumov.cz/llms.txt">ortocentrumov.cz/llms.txt</a>.</p>
+      </div>
+<pre class="code" aria-label="Výňatek ze souboru llms.txt"><span class="h"># ORTOCENTRUM® Ostrava-Poruba</span>
+
+&gt; Specializovaná ortopedie v Ostravě. Hlavní web
+&gt; sítě ortopedických ambulancí ORTOCENTRUM® (od roku 1993)
+
+<span class="h">## Ordinační hodiny</span>
+- Černá Perla, Slavíkova, Ostrava-Poruba:
+  St a Čt 7:00–14:00 (MUDr. Miroslav Weber)
+
+<span class="h">## Objednání</span>
+- K vyšetření je třeba se objednat, nejlépe telefonicky
+- Smluvní pojišťovny: 111 VZP, 201 VoZP, 205 ČPZP,
+  211 ZPMV, 213 RBP
+<span class="c">…</span></pre>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="report">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">03</div>
+      <div>
+        <h2>Měsíční report: vidíte, za co platíte</h2>
+        <p>Report vzniká automaticky z&nbsp;Google Analytics včetně komentáře. Než vám ho pošleme, každý osobně zkontrolujeme. Píšeme pro majitele firmy, ne pro marketéra.</p>
+      </div>
+    </div>
+    <div class="report-grid">
+      <dl class="metrics">
+        <div><dt>Kolik lidí přišlo</dt><dd>Návštěvníci a&nbsp;návštěvy, srovnání s&nbsp;minulým měsícem, graf po dnech.</dd></div>
+        <div><dt>Kolik se jich ozvalo</dt><dd>Kliknutí na telefon a&nbsp;e-mail. Pro většinu firem nejdůležitější číslo.</dd></div>
+        <div><dt>Odkud přišli</dt><dd>Google vyhledávání, mapy, sociální sítě, přímé návštěvy, jiné weby.</dd></div>
+        <div><dt>Na co se ptají</dt><dd>Které otázky na webu lidé otevírají nejčastěji. Napoví, co dát víc na očí.</dd></div>
+        <div><dt>Co dělat dál</dt><dd>2–3 doporučení na další měsíc, vždy podložená čísly z&nbsp;reportu.</dd></div>
+      </dl>
+      <div class="report-side">
+        <h3>Podívejte se na ukázku</h3>
+        <p>Dvě strany A4, stejný formát, jaký dostávají naši klienti. Čísla v&nbsp;ukázce jsou ilustrativní.</p>
+        <a class="btn btn-primary" href="assets/ukazka-mesicniho-reportu.pdf" data-track="report_download" download>Stáhnout ukázku (PDF, 33 kB)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="reference">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">04</div>
+      <div>
+        <h2>Na čem jsme to vyzkoušeli</h2>
+        <p>Jsme nová značka, proto ukazujeme jen to, co si můžete sami ověřit.</p>
+      </div>
+    </div>
+    <div class="case">
+      <div>
+        <p class="kicker">Zdravotnictví · Ostrava a&nbsp;okolí</p>
+        <h3>ORTOCENTRUM®</h3>
+        <p class="where">Síť ortopedických ambulancí: hlavní pracoviště v&nbsp;Ostravě-Porubě a&nbsp;pobočky ve Slezské Ostravě a&nbsp;Bílovci.</p>
+        <p class="domains">
+          <a href="https://www.ortocentrumov.cz/">ortocentrumov.cz</a><br>
+          <a href="https://www.ortocentrumslezska.cz/">ortocentrumslezska.cz</a><br>
+          <a href="https://www.ortocentrumbilovec.cz/">ortocentrumbilovec.cz</a><br>
+          <a href="https://www.ortocentrum-msk.cz/">ortocentrum-msk.cz</a>
+        </p>
+      </div>
+      <div>
+        <p class="kicker">Co jsme udělali</p>
+        <ul>
+          <li>Čtyři weby na vlastních doménách, propojené do jedné sítě</li>
+          <li>Lékaři, ordinační hodiny, adresy a&nbsp;výkony ve strukturovaných datech</li>
+          <li>Soubor llms.txt se vším, co pacient potřebuje k&nbsp;objednání</li>
+          <li>Měření kliknutí na telefon, e-mail, mapu a&nbsp;otevřené dotazy</li>
+          <li>Automatický měsíční report pro majitele</li>
+        </ul>
+      </div>
+    </div>
+    <div class="case-2">
+      <p class="kicker">Vlastní web zakladatele</p>
+      <p><a href="https://michalmicek.cz/">michalmicek.cz</a> slouží jako zkušební pole: strukturovaná data, llms.txt a&nbsp;vlastní <a href="https://www.wikidata.org/wiki/Q139824678">záznam ve Wikidata</a>, ze kterých AI asistenti čerpají informace o&nbsp;lidech a&nbsp;firmách. Nové postupy zkoušíme nejdřív tady, teprve potom u&nbsp;klientů.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="cenik">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">05</div>
+      <div>
+        <h2>Ceník</h2>
+        <p>Platíte jednou za web a&nbsp;potom měsíčně za péči a&nbsp;report. Bez měsíční péče weby neděláme. Web bez měření a&nbsp;údržby po roce zastará a&nbsp;nikdo neví, jestli funguje.</p>
+      </div>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Start</h3>
+        <p class="for">Pro firmu nebo ordinaci, která potřebuje dobrý web a&nbsp;přehled, co přináší.</p>
+        <div class="price">
+          <div><span class="n">14&nbsp;900&nbsp;Kč</span><span class="u">za web, jednorázově</span></div>
+          <div><span class="n small">1&nbsp;490&nbsp;Kč</span><span class="u">měsíčně za péči a&nbsp;report</span></div>
         </div>
-        <div>
-            <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">Telefon</label>
-            <input type="tel" name="telefon" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="+420 123 456 789">
+        <ul>
+          <li>Web na míru, rychlý na mobilu</li>
+          <li>Strukturovaná data a&nbsp;llms.txt</li>
+          <li>Měření telefonátů, e-mailů a&nbsp;mapy</li>
+          <li>Měsíční report v&nbsp;PDF s&nbsp;komentářem</li>
+          <li>Správa webu a&nbsp;drobné úpravy údajů</li>
+        </ul>
+        <a class="btn btn-ghost" href="#kontakt">Chci Start</a>
+      </div>
+      <div class="plan">
+        <h3>Růst</h3>
+        <p class="for">Pro firmu, která chce, aby web každý měsíc přidával obsah a&nbsp;rostl ve vyhledávání.</p>
+        <div class="price">
+          <div><span class="n">29&nbsp;900&nbsp;Kč</span><span class="u">za web, jednorázově</span></div>
+          <div><span class="n small">2&nbsp;990&nbsp;Kč</span><span class="u">měsíčně za péči a&nbsp;report</span></div>
         </div>
+        <ul>
+          <li>Vše ze Startu</li>
+          <li>Průběžné úpravy obsahu</li>
+          <li>1 nový článek nebo odpověď na častý dotaz měsíčně</li>
+          <li>Kontrola, co o&nbsp;vás říkají AI asistenti</li>
+          <li>Čtvrtletní konzultace nad výsledky</li>
+        </ul>
+        <a class="btn btn-primary" href="#kontakt">Chci Růst</a>
+      </div>
     </div>
-    <div>
-        <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">Webová stránka</label>
-        <input type="url" name="web" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="https://www.vafirma.cz">
+    <div class="price-notes">
+      <p>Ceny jsou bez DPH. Minimální doba měsíční péče je 12&nbsp;měsíců. Přesnou cenu potvrdíme po úvodním hovoru podle rozsahu webu.</p>
+      <p>PPC kampaně a&nbsp;grafiku zajistíme přes specialisty z&nbsp;naší lektorské sítě. Cena podle rozsahu.</p>
     </div>
-    <button type="submit" class="w-full py-4 rounded-xl bg-accent text-black font-bold text-lg hover:scale-[1.02] transition-all neon-glow mt-4">
-        Odeslat žádost
-    </button>
-</form>
+  </div>
+</section>
 
-
-
-
-
-
-
-
-<!-- stary form 
-                    <form @submit.prevent="formSubmitted = true" class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">Celé jméno</label>
-                            <input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="Jan Novák">
-                        </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">E-mail</label>
-                                <input type="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="jan@firma.cz">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">Telefon</label>
-                                <input type="tel" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="+420 123 456 789">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-accent mb-2">Webová stránka</label>
-                            <input type="url" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors" placeholder="https://www.vafirma.cz">
-                        </div>
-                        <button type="submit" class="w-full py-4 rounded-xl bg-accent text-black font-bold text-lg hover:scale-[1.02] transition-all neon-glow mt-4">
-                            Odeslat žádost
-                        </button>
-                    </form>  -->
-                </div>
-
-                <div x-show="formSubmitted" class="text-center py-12">
-                    <div class="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i data-lucide="check" class="w-10 h-10 text-accent"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold mb-4">Děkujeme!</h2>
-                    <p class="text-white/50 mb-8">Vaše žádost byla úspěšně odeslána. Náš specialista se vám ozve do 24 hodin.</p>
-                    <button @click="showModal = false; formSubmitted = false" class="px-8 py-3 rounded-full border border-white/10 hover:bg-white/5 transition-all font-medium">
-                        Zavřít
-                    </button>
-                </div>
-            </div>
-        </div>
+<section class="block" id="postup">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">06</div>
+      <div>
+        <h2>Jak to probíhá</h2>
+      </div>
     </div>
+    <ol class="steps">
+      <li><h3>Hovor</h3><p>20 minut zdarma. Zjistíme, odkud k&nbsp;vám chodí zákazníci a&nbsp;co má web umět.</p></li>
+      <li><h3>Návrh a&nbsp;cena</h3><p>Pošleme vám strukturu webu a&nbsp;pevnou cenu. Nic nezačne, dokud neřeknete ano.</p></li>
+      <li><h3>Web k&nbsp;připomínkám</h3><p>Uvidíte hotovou verzi na vlastní adrese, připomínkujete, upravíme.</p></li>
+      <li><h3>Spuštění a&nbsp;první report</h3><p>Web jde ven, zapneme měření. První report přijde po prvním celém měsíci.</p></li>
+    </ol>
+  </div>
+</section>
 
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
+<section class="block" id="kdo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">07</div>
+      <div>
+        <h2>Kdo vám web udělá</h2>
+      </div>
+    </div>
+    <div class="about">
+      <picture>
+        <source srcset="assets/michal-micek.webp" type="image/webp">
+        <img src="assets/michal-micek.jpg" width="713" height="720" alt="Michal Míček, zakladatel AIOMARKETING.cz" loading="lazy">
+      </picture>
+      <div>
+        <h3>Michal Míček</h3>
+        <p class="role">Mgr., LL.M. · zakladatel Edu Partners a&nbsp;AIOMARKETING.cz</p>
+        <p>Přes 14 let v&nbsp;e-commerce, fintechu a&nbsp;vzdělávání. V&nbsp;roce 2011 založil Edu Partners, akreditovanou vzdělávací firmu s&nbsp;kurzy v&nbsp;Praze a&nbsp;Ostravě. Dnes školí firmy v&nbsp;práci s&nbsp;umělou inteligencí.</p>
+        <p>Weby a&nbsp;reporty dělá stejným postupem, jaký učí na kurzech. Mluvíte s&nbsp;ním přímo, ne s&nbsp;obchodníkem.</p>
+        <p><a href="https://www.linkedin.com/in/michalmicek/">LinkedIn</a> · <a href="https://michalmicek.cz/">michalmicek.cz</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="otazky">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">08</div>
+      <div>
+        <h2>Časté otázky</h2>
+      </div>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Děláte e-shopy?</summary>
+        <p>Ne. Děláme prezentační weby pro firmy, ordinace a&nbsp;služby, kde je cílem telefonát, e-mail nebo návštěva. E-shopy vyžadují jiný provoz i&nbsp;podporu.</p>
+      </details>
+      <details>
+        <summary>Zaručíte, že mě doporučí ChatGPT?</summary>
+        <p>Ne, to poctivě zaručit nejde. Zajistíme, aby o&nbsp;vás AI asistenti i&nbsp;Google měli úplné a&nbsp;aktuální informace ve formě, které rozumí, a&nbsp;měříme, co se na webu děje.</p>
+      </details>
+      <details>
+        <summary>Co je soubor llms.txt?</summary>
+        <p>Textový soubor na vašem webu, který AI asistentům stručně a&nbsp;přehledně říká, kdo jste, co nabízíte, kde vás najdou a&nbsp;jak se objednat. Ukázku najdete výše v&nbsp;části 02.</p>
+      </details>
+      <details>
+        <summary>Proč je minimální doba 12 měsíců?</summary>
+        <p>Výsledky ve vyhledávání se projevují v&nbsp;řádu měsíců, ne týdnů. Díky ročnímu závazku je navíc jednorázová cena za web nižší.</p>
+      </details>
+      <details>
+        <summary>Už web mám. Můžete ho jen převzít a&nbsp;reportovat?</summary>
+        <p>Záleží na tom, na čem web běží a&nbsp;v&nbsp;jakém je stavu. Probereme to na úvodním hovoru, stačí poslat adresu webu.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">09</div>
+      <div>
+        <h2>Domluvme si 20 minut</h2>
+        <p>Nejrychlejší je zavolat. Můžete také napsat pár vět o&nbsp;své firmě a&nbsp;ozvu se.</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <div class="direct">
+        <a href="tel:+420606663826" data-track="phone_click">+420 606 663 826</a>
+        <a class="mail" href="mailto:michal.micek@edu-partners.cz?subject=Popt%C3%A1vka%20webu%20(AIOMARKETING.cz)" data-track="email_click">michal.micek@edu-partners.cz</a>
+        <span class="mono">Michal Míček · Praha a&nbsp;Ostrava</span>
+      </div>
+      <form id="poptavka" novalidate>
+        <label for="f-jmeno">Jméno</label>
+        <input id="f-jmeno" name="jmeno" autocomplete="name" required>
+        <label for="f-kontakt">Telefon nebo e-mail</label>
+        <input id="f-kontakt" name="kontakt" autocomplete="tel" required>
+        <label for="f-web">Váš web nebo obor (nepovinné)</label>
+        <input id="f-web" name="web">
+        <label for="f-zprava">Co potřebujete</label>
+        <textarea id="f-zprava" name="zprava"></textarea>
+        <button class="btn btn-primary" type="submit">Připravit e-mail s&nbsp;poptávkou</button>
+        <p class="form-note">Formulář otevře váš e-mailový program s&nbsp;vyplněnou zprávou. Nic se neukládá na tomto webu.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><strong>AIOMARKETING.cz</strong> · služba společnosti Edu Partners s.r.o., IČO 28660757</p>
+    <p><a href="/llms.txt">llms.txt</a> · <a href="https://www.linkedin.com/in/michalmicek/">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  function track(name) {
+    if (typeof window.gtag === 'function') window.gtag('event', name);
+  }
+  document.querySelectorAll('[data-track]').forEach(function (el) {
+    el.addEventListener('click', function () { track(el.getAttribute('data-track')); });
+  });
+  document.querySelectorAll('.faq details').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open && typeof window.gtag === 'function') {
+        window.gtag('event', 'faq_open', { question: d.querySelector('summary').textContent.trim() });
+      }
+    });
+  });
+  var form = document.getElementById('poptavka');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = form.elements;
+    if (!f.jmeno.value.trim() || !f.kontakt.value.trim()) {
+      (f.jmeno.value.trim() ? f.kontakt : f.jmeno).focus();
+      return;
+    }
+    var body = 'Jméno: ' + f.jmeno.value.trim() +
+      '\nKontakt: ' + f.kontakt.value.trim() +
+      '\nWeb / obor: ' + f.web.value.trim() +
+      '\n\n' + f.zprava.value.trim();
+    track('form_submit');
+    window.location.href = 'mailto:michal.micek@edu-partners.cz?subject=' +
+      encodeURIComponent('Poptávka webu (AIOMARKETING.cz)') + '&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
 </body>
 </html>
