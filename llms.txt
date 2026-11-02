@@ -1,0 +1,36 @@
+# AIOMARKETING.cz
+
+> Tvorba webů pro malé firmy, ordinace a služby v České republice. Každý web je připravený pro AI asistenty a vyhledávače (strukturovaná data schema.org, soubor llms.txt), měří zájem zákazníků (kliknutí na telefon, e-mail, mapu) a klient každý měsíc dostává report v PDF. E-shopy nedělá.
+
+Služba společnosti Edu partners s.r.o., Raisova 889/5, 709 00 Ostrava, IČO 28660757, DIČ CZ28660757, zapsaná u Krajského soudu v Ostravě, oddíl C, vložka 37617 (vzdělávací firma založená v roce 2011). Aktualizováno 2026-11-02.
+
+## Co klient dostane
+- Web na míru, rychlý na mobilu, s telefonem, adresou a otevírací dobou hned nahoře
+- Strukturovaná data (schema.org) a soubor llms.txt pro AI asistenty
+- Měření kliknutí na telefon, e-mail, mapu a otevřených dotazů v Google Analytics 4
+- Měsíční report v PDF s komentářem a 2–3 doporučeními
+- Každý měsíc až 30 minut úprav webu podle čísel z reportu
+
+## Ceník (bez DPH, minimální doba správy 12 měsíců)
+- Jednoduchý web: od 14 900 Kč jednorázově; větší web s více stránkami se nacení po úvodním hovoru
+- Správa, měsíční report a až 30 minut úprav webu měsíčně: 399 Kč měsíčně (zaváděcí cena pro prvních 10 klientů, garantovaná 12 měsíců; poté 1 400 Kč měsíčně)
+- Doplňky podle rozsahu: nové články, ověření odpovědí AI asistentů, PPC kampaně a grafika (přes specialisty z lektorské sítě Edu Partners)
+
+## Podmínky
+- Web i doména patří klientovi jako objednateli.
+- Jednoduchý web je hotový do 14 dnů od dodání podkladů.
+- Po 12 měsících správa pokračuje po měsících, lze ji zrušit kdykoli s měsíční výpovědní lhůtou.
+
+## Reference
+- [ORTOCENTRUM®](https://www.ortocentrumov.cz/): síť ortopedických ambulancí v Ostravě a okolí, 4 weby, strukturovaná data, llms.txt, měření a automatický měsíční report
+- [michalmicek.cz](https://michalmicek.cz/): web zakladatele, strukturovaná data, llms.txt, záznam ve Wikidata
+
+## Co služba neslibuje
+- Nezaručuje, že firmu doporučí ChatGPT nebo jiný AI asistent. Zajišťuje úplné a pravdivé informace a měření.
+
+## Kontakt
+- Michal Míček, zakladatel
+- Telefon: +420 606 663 826
+- E-mail: michal.micek@edu-partners.cz
+- Úvodní hovor 20 minut zdarma
+- LinkedIn: https://www.linkedin.com/in/michalmicek/
