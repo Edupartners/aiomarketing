@@ -39,7 +39,7 @@
       "parentOrganization": {
         "@type": "Organization",
         "name": "Edu Partners s.r.o.",
-        "taxID": "28660757",
+        "identifier": { "@type": "PropertyValue", "propertyID": "IČO", "value": "28660757" },
         "foundingDate": "2011"
       },
       "hasOfferCatalog": {
@@ -49,7 +49,7 @@
           {
             "@type": "Offer",
             "name": "Start",
-            "description": "Web, příprava pro AI, měření a měsíční report. Minimální doba 12 měsíců.",
+            "description": "Web, příprava pro Google a AI asistenty, měření kliknutí na telefon a e-mail a měsíční report. Minimální doba 12 měsíců.",
             "priceSpecification": [
               { "@type": "UnitPriceSpecification", "price": 14900, "priceCurrency": "CZK", "name": "Tvorba webu, jednorázově, bez DPH" },
               { "@type": "UnitPriceSpecification", "price": 1490, "priceCurrency": "CZK", "unitText": "měsíc", "name": "Měsíční péče, bez DPH" }
@@ -58,7 +58,7 @@
           {
             "@type": "Offer",
             "name": "Růst",
-            "description": "Vše ze Startu, k tomu průběžné úpravy obsahu, jeden nový článek nebo odpověď měsíčně a čtvrtletní konzultace. Minimální doba 12 měsíců.",
+            "description": "Vše ze Startu, k tomu průběžné úpravy obsahu, jeden nový článek nebo odpověď měsíčně, měsíční ověření odpovědí AI asistentů a čtvrtletní konzultace. Minimální doba 12 měsíců.",
             "priceSpecification": [
               { "@type": "UnitPriceSpecification", "price": 29900, "priceCurrency": "CZK", "name": "Tvorba webu, jednorázově, bez DPH" },
               { "@type": "UnitPriceSpecification", "price": 2990, "priceCurrency": "CZK", "unitText": "měsíc", "name": "Měsíční péče, bez DPH" }
@@ -78,8 +78,7 @@
       "url": "https://michalmicek.cz/",
       "sameAs": [
         "https://www.linkedin.com/in/michalmicek/",
-        "https://www.wikidata.org/wiki/Q139824678",
-        "https://michalmicek.cz/"
+        "https://www.wikidata.org/wiki/Q139824678"
       ]
     },
     {
@@ -88,7 +87,8 @@
         { "@type": "Question", "name": "Děláte e-shopy?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Děláme prezentační weby pro firmy, ordinace a služby, kde je cílem telefonát, e-mail nebo návštěva. E-shopy vyžadují jiný provoz i podporu." } },
         { "@type": "Question", "name": "Zaručíte, že mě doporučí ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Ne, to poctivě zaručit nejde. Zajistíme, aby o vás AI asistenti i Google měli úplné a aktuální informace ve formě, které rozumí, a měříme, co se na webu děje." } },
         { "@type": "Question", "name": "Co je soubor llms.txt?", "acceptedAnswer": { "@type": "Answer", "text": "Textový soubor na vašem webu, který AI asistentům stručně a přehledně říká, kdo jste, co nabízíte, kde vás najdou a jak se objednat." } },
-        { "@type": "Question", "name": "Proč je minimální doba 12 měsíců?", "acceptedAnswer": { "@type": "Answer", "text": "Výsledky ve vyhledávání se projevují v řádu měsíců. Díky ročnímu závazku je navíc jednorázová cena za web nižší." } }
+        { "@type": "Question", "name": "Už web mám. Můžete ho jen převzít a reportovat?", "acceptedAnswer": { "@type": "Answer", "text": "Záleží na tom, na čem web běží a v jakém je stavu. Probereme to na úvodním hovoru, stačí poslat adresu webu." } },
+        { "@type": "Question", "name": "Proč je minimální doba 12 měsíců?", "acceptedAnswer": { "@type": "Answer", "text": "Výsledky ve vyhledávání se projevují v řádu měsíců, ne týdnů. Report má smysl, až když je s čím srovnávat." } }
       ]
     }
   ]
@@ -104,11 +104,11 @@
     <nav class="nav" aria-label="Hlavní navigace">
       <a href="#co-dostanete">Co dostanete</a>
       <a href="#report">Měsíční report</a>
-      <a href="#reference">Reference</a>
       <a href="#cenik">Ceník</a>
+      <a href="#reference">Reference</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
-    <a class="top-call" href="tel:+420606663826" data-track="phone_click"><span>Zavolat </span>606 663 826</a>
+    <div class="top-right"><a class="top-link" href="#cenik">Ceník</a><a class="top-call" href="tel:+420606663826" data-track="phone_click"><span>Zavolat </span>606&nbsp;663&nbsp;826</a></div>
   </div>
 </header>
 
@@ -118,20 +118,20 @@
   <div class="wrap">
     <div>
       <p class="kicker">Weby pro malé firmy, ordinace a&nbsp;služby</p>
-      <h1>Web, který vám nosí poptávky. <em>A&nbsp;každý měsíc vidíte kolik.</em></h1>
-      <p class="lead">Postavíme vám rychlý web, připravíme ho tak, aby vás správně pochopil Google i&nbsp;ChatGPT, a&nbsp;měříme, kolik lidí z&nbsp;něj zavolá nebo napíše. Na začátku každého měsíce vám přijde report s&nbsp;čísly a&nbsp;doporučením, co zlepšit.</p>
+      <h1>Web, který vám nosí poptávky. <span class="hl">A&nbsp;každý měsíc vidíte kolik.</span></h1>
+      <p class="lead">Postavíme vám rychlý web, připravíme ho tak, aby vás správně pochopil Google i&nbsp;ChatGPT, a&nbsp;měříme, kolik lidí na něm klikne na telefon nebo e-mail. Na začátku každého měsíce vám přijde report s&nbsp;čísly a&nbsp;doporučením, co zlepšit.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#kontakt">Domluvit úvodní hovor</a>
         <a class="btn btn-ghost" href="assets/ukazka-mesicniho-reportu.pdf" data-track="report_download" download>Stáhnout ukázku reportu (PDF)</a>
       </div>
-      <p class="hero-note">Úvodní hovor trvá 20 minut a&nbsp;je zdarma. Řekneme vám, co by váš web měl umět a&nbsp;kolik to bude stát.</p>
+      <p class="hero-note"><strong>Web od 14&nbsp;900&nbsp;Kč, péče a&nbsp;report od 1&nbsp;490&nbsp;Kč měsíčně</strong> (bez DPH). Úvodní hovor trvá 20&nbsp;minut a&nbsp;je zdarma.</p>
     </div>
     <figure class="sheet">
       <picture>
         <source srcset="assets/report-ukazka.webp" type="image/webp">
         <img src="assets/report-ukazka.jpg" width="1100" height="1555" alt="Ukázka první strany měsíčního reportu: návštěvníci, kliknutí na telefon, podíl z mobilu, graf návštěv po dnech, zdroje návštěv a doporučení na další měsíc.">
       </picture>
-      <figcaption class="mono">Takhle vypadá měsíční report. Čísla v&nbsp;ukázce jsou ilustrativní.</figcaption>
+      <figcaption>Takhle vypadá měsíční report. Čísla v&nbsp;ukázce jsou ilustrativní.</figcaption>
     </figure>
   </div>
 </section>
@@ -147,10 +147,9 @@
 <section class="block" id="co-dostanete">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-no">01</div>
       <div>
         <h2>Co od nás dostanete</h2>
-        <p>Neprodáváme „online marketing“. Dostanete web, který dělá jednu věc: přivádí zákazníky k&nbsp;telefonu. A&nbsp;důkaz, že to funguje.</p>
+        <p>Web, který dělá jednu věc: přivádí zákazníky k&nbsp;telefonu. A&nbsp;každý měsíc čísla, podle kterých poznáte, jestli to funguje.</p>
       </div>
     </div>
     <div class="rows">
@@ -159,12 +158,12 @@
         <p>Telefon, adresa, otevírací doba a&nbsp;služby jsou vidět hned nahoře, hlavně na mobilu. Odtud k&nbsp;vám přichází většina lidí.</p>
       </div>
       <div class="row">
-        <h3>Web, kterému rozumí AI asistenti a&nbsp;Google</h3>
-        <p>Údaje o&nbsp;firmě zapíšeme ve strukturované podobě (schema.org) a&nbsp;přidáme soubor llms.txt. Když se někdo zeptá ChatGPT nebo Googlu, kdo ve vašem oboru a&nbsp;městě je, mají o&nbsp;vás správné a&nbsp;aktuální informace.</p>
+        <h3>Web, kterému rozumí Google i&nbsp;ChatGPT</h3>
+        <p>Na web doplníme údaje o&nbsp;firmě ve formě, které rozumí vyhledávače i&nbsp;AI: kdo jste, kde jste, kdy máte otevřeno a&nbsp;co děláte. Když se někdo zeptá třeba „kde v&nbsp;Ostravě rychle seženu ortopeda“, mají o&nbsp;vás správné informace.</p>
       </div>
       <div class="row">
         <h3>Měření toho, co přináší zákazníky</h3>
-        <p>Nesledujeme jen návštěvnost. Měříme kliknutí na telefon, e-mail a&nbsp;mapu a&nbsp;to, na co se lidé na webu nejčastěji ptají.</p>
+        <p>Nesledujeme jen návštěvnost. Měříme kliknutí na telefon, e-mail a&nbsp;mapu a&nbsp;které otázky na webu lidé nejčastěji rozkliknou.</p>
       </div>
       <div class="row">
         <h3>Měsíční report v&nbsp;PDF</h3>
@@ -182,47 +181,9 @@
   </div>
 </section>
 
-<section class="block" id="ai">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-no">02</div>
-      <div>
-        <h2>Takhle váš web mluví s&nbsp;umělou inteligencí</h2>
-        <p>Vedle běžného webu dostane každý klient soubor llms.txt: stručný přehled pro AI asistenty, bez reklamních řečí.</p>
-      </div>
-    </div>
-    <div class="split">
-      <div>
-        <ol>
-          <li><strong>Kdo jste a&nbsp;kde vás najdou.</strong> Název, adresy, pobočky, odkazy.</li>
-          <li><strong>Kdy máte otevřeno.</strong> Ordinační nebo otevírací hodiny po dnech.</li>
-          <li><strong>Co děláte.</strong> Služby tak, jak se na ně lidé ptají.</li>
-          <li><strong>Jak se objednat.</strong> Telefon, e-mail, podmínky, s&nbsp;kým máte smlouvu.</li>
-        </ol>
-        <p class="src">Ukázka vpravo je výňatek ze souboru, který jsme připravili pro síť ortopedických ambulancí ORTOCENTRUM® v&nbsp;Ostravě. Celý je veřejně na <a href="https://www.ortocentrumov.cz/llms.txt">ortocentrumov.cz/llms.txt</a>.</p>
-      </div>
-<pre class="code" aria-label="Výňatek ze souboru llms.txt"><span class="h"># ORTOCENTRUM® Ostrava-Poruba</span>
-
-&gt; Specializovaná ortopedie v Ostravě. Hlavní web
-&gt; sítě ortopedických ambulancí ORTOCENTRUM® (od roku 1993)
-
-<span class="h">## Ordinační hodiny</span>
-- Černá Perla, Slavíkova, Ostrava-Poruba:
-  St a Čt 7:00–14:00 (MUDr. Miroslav Weber)
-
-<span class="h">## Objednání</span>
-- K vyšetření je třeba se objednat, nejlépe telefonicky
-- Smluvní pojišťovny: 111 VZP, 201 VoZP, 205 ČPZP,
-  211 ZPMV, 213 RBP
-<span class="c">…</span></pre>
-    </div>
-  </div>
-</section>
-
 <section class="block" id="report">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-no">03</div>
       <div>
         <h2>Měsíční report: vidíte, za co platíte</h2>
         <p>Report vzniká automaticky z&nbsp;Google Analytics včetně komentáře. Než vám ho pošleme, každý osobně zkontrolujeme. Píšeme pro majitele firmy, ne pro marketéra.</p>
@@ -231,24 +192,88 @@
     <div class="report-grid">
       <dl class="metrics">
         <div><dt>Kolik lidí přišlo</dt><dd>Návštěvníci a&nbsp;návštěvy, srovnání s&nbsp;minulým měsícem, graf po dnech.</dd></div>
-        <div><dt>Kolik se jich ozvalo</dt><dd>Kliknutí na telefon a&nbsp;e-mail. Pro většinu firem nejdůležitější číslo.</dd></div>
+        <div><dt>Kolik se jich chtělo ozvat</dt><dd>Kliknutí na telefon a&nbsp;e-mail. Pro většinu firem nejdůležitější číslo.</dd></div>
         <div><dt>Odkud přišli</dt><dd>Google vyhledávání, mapy, sociální sítě, přímé návštěvy, jiné weby.</dd></div>
         <div><dt>Na co se ptají</dt><dd>Které otázky na webu lidé otevírají nejčastěji. Napoví, co dát víc na očí.</dd></div>
         <div><dt>Co dělat dál</dt><dd>2–3 doporučení na další měsíc, vždy podložená čísly z&nbsp;reportu.</dd></div>
       </dl>
       <div class="report-side">
         <h3>Podívejte se na ukázku</h3>
-        <p>Dvě strany A4, stejný formát, jaký dostávají naši klienti. Čísla v&nbsp;ukázce jsou ilustrativní.</p>
-        <a class="btn btn-primary" href="assets/ukazka-mesicniho-reportu.pdf" data-track="report_download" download>Stáhnout ukázku (PDF, 33 kB)</a>
+        <p>Dvě strany A4 ve stejném formátu, jaký dostává ORTOCENTRUM. Čísla v&nbsp;ukázce jsou ilustrativní.</p>
+        <a class="btn btn-primary" href="assets/ukazka-mesicniho-reportu.pdf" data-track="report_download" download>Stáhnout ukázku (PDF, 33&nbsp;kB)</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="block" id="cenik">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>Ceník</h2>
+        <p>Platíte jednou za web a&nbsp;potom měsíčně za péči a&nbsp;report. Bez měsíční péče weby neděláme. Web bez měření a&nbsp;údržby po roce zastará a&nbsp;nikdo neví, jestli funguje.</p>
+      </div>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Start</h3>
+        <p class="for">Pro firmu nebo ordinaci, která potřebuje dobrý web a&nbsp;přehled, co přináší.</p>
+        <div class="price">
+          <div><span class="n">14&nbsp;900&nbsp;Kč</span><span class="u">za web, jednorázově</span></div>
+          <div><span class="n small">1&nbsp;490&nbsp;Kč</span><span class="u">měsíčně za péči a&nbsp;report</span></div>
+        </div>
+        <ul>
+          <li>Web na míru, rychlý na mobilu</li>
+          <li>Údaje o&nbsp;firmě připravené pro Google a&nbsp;ChatGPT</li>
+          <li>Měření kliknutí na telefon, e-mail a&nbsp;mapu</li>
+          <li>Měsíční report v&nbsp;PDF s&nbsp;komentářem</li>
+          <li>Správa webu a&nbsp;drobné úpravy údajů</li>
+        </ul>
+        <a class="btn btn-ghost" href="#kontakt">Chci Start</a>
+      </div>
+      <div class="plan">
+        <h3>Růst</h3>
+        <p class="for">Pro firmu, která chce, aby web každý měsíc přidával obsah a&nbsp;rostl ve vyhledávání.</p>
+        <div class="price">
+          <div><span class="n">29&nbsp;900&nbsp;Kč</span><span class="u">za web, jednorázově</span></div>
+          <div><span class="n small">2&nbsp;990&nbsp;Kč</span><span class="u">měsíčně za péči a&nbsp;report</span></div>
+        </div>
+        <ul>
+          <li>Vše ze Startu</li>
+          <li>Průběžné úpravy obsahu</li>
+          <li>1&nbsp;nový článek nebo odpověď na častý dotaz měsíčně</li>
+          <li>Jednou měsíčně ověříme, co o&nbsp;vás odpoví ChatGPT a&nbsp;další asistenti</li>
+          <li>Čtvrtletní konzultace nad výsledky</li>
+        </ul>
+        <a class="btn btn-primary" href="#kontakt">Chci Růst</a>
+      </div>
+    </div>
+    <div class="price-notes">
+      <p>Ceny jsou bez DPH. Minimální doba měsíční péče je 12&nbsp;měsíců. První rok celkem: Start 32&nbsp;780&nbsp;Kč, Růst 65&nbsp;780&nbsp;Kč. Přesnou cenu potvrdíme po úvodním hovoru podle rozsahu webu.</p>
+      <p>PPC kampaně a&nbsp;grafiku zajistíme přes specialisty z&nbsp;naší lektorské sítě. Cena podle rozsahu.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="postup">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <h2>Jak to probíhá</h2>
+      </div>
+    </div>
+    <ol class="steps">
+      <li><h3>Hovor</h3><p>20&nbsp;minut zdarma. Zjistíme, odkud k&nbsp;vám chodí zákazníci a&nbsp;co má web umět.</p></li>
+      <li><h3>Návrh a&nbsp;cena</h3><p>Pošleme vám strukturu webu a&nbsp;pevnou cenu. Nic nezačne, dokud neřeknete ano.</p></li>
+      <li><h3>Web k&nbsp;připomínkám</h3><p>Uvidíte hotovou verzi na zkušební adrese, připomínkujete, upravíme.</p></li>
+      <li><h3>Spuštění a&nbsp;první report</h3><p>Spustíme web a&nbsp;zapneme měření. První report přijde po prvním celém měsíci.</p></li>
+    </ol>
   </div>
 </section>
 
 <section class="block" id="reference">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-no">04</div>
       <div>
         <h2>Na čem jsme to vyzkoušeli</h2>
         <p>Jsme nová značka, proto ukazujeme jen to, co si můžete sami ověřit.</p>
@@ -284,77 +309,45 @@
   </div>
 </section>
 
-<section class="block" id="cenik">
+<section class="block" id="ai">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-no">05</div>
       <div>
-        <h2>Ceník</h2>
-        <p>Platíte jednou za web a&nbsp;potom měsíčně za péči a&nbsp;report. Bez měsíční péče weby neděláme. Web bez měření a&nbsp;údržby po roce zastará a&nbsp;nikdo neví, jestli funguje.</p>
+        <h2>Co se o&nbsp;vás dozví ChatGPT</h2>
+        <p>Vedle běžného webu dostane každý klient soubor llms.txt: stručný přehled pro AI asistenty, bez reklamních řečí.</p>
       </div>
     </div>
-    <div class="plans">
-      <div class="plan">
-        <h3>Start</h3>
-        <p class="for">Pro firmu nebo ordinaci, která potřebuje dobrý web a&nbsp;přehled, co přináší.</p>
-        <div class="price">
-          <div><span class="n">14&nbsp;900&nbsp;Kč</span><span class="u">za web, jednorázově</span></div>
-          <div><span class="n small">1&nbsp;490&nbsp;Kč</span><span class="u">měsíčně za péči a&nbsp;report</span></div>
-        </div>
-        <ul>
-          <li>Web na míru, rychlý na mobilu</li>
-          <li>Strukturovaná data a&nbsp;llms.txt</li>
-          <li>Měření telefonátů, e-mailů a&nbsp;mapy</li>
-          <li>Měsíční report v&nbsp;PDF s&nbsp;komentářem</li>
-          <li>Správa webu a&nbsp;drobné úpravy údajů</li>
-        </ul>
-        <a class="btn btn-ghost" href="#kontakt">Chci Start</a>
+    <div class="split">
+      <div>
+        <ol>
+          <li><strong>Kdo jste a&nbsp;kde vás najdou.</strong> Název, adresy, pobočky, odkazy.</li>
+          <li><strong>Co děláte.</strong> Služby tak, jak se na ně lidé ptají.</li>
+          <li><strong>Kdy máte otevřeno.</strong> Ordinační nebo otevírací hodiny po dnech.</li>
+          <li><strong>Jak se objednat.</strong> Telefon, e-mail, podmínky, s&nbsp;kým máte smlouvu.</li>
+        </ol>
+        <p class="src">Ukázka vpravo je výňatek ze souboru, který jsme připravili pro síť ortopedických ambulancí ORTOCENTRUM® v&nbsp;Ostravě. Celý je veřejně na <a href="https://www.ortocentrumov.cz/llms.txt">ortocentrumov.cz/llms.txt</a>.</p>
       </div>
-      <div class="plan">
-        <h3>Růst</h3>
-        <p class="for">Pro firmu, která chce, aby web každý měsíc přidával obsah a&nbsp;rostl ve vyhledávání.</p>
-        <div class="price">
-          <div><span class="n">29&nbsp;900&nbsp;Kč</span><span class="u">za web, jednorázově</span></div>
-          <div><span class="n small">2&nbsp;990&nbsp;Kč</span><span class="u">měsíčně za péči a&nbsp;report</span></div>
-        </div>
-        <ul>
-          <li>Vše ze Startu</li>
-          <li>Průběžné úpravy obsahu</li>
-          <li>1 nový článek nebo odpověď na častý dotaz měsíčně</li>
-          <li>Kontrola, co o&nbsp;vás říkají AI asistenti</li>
-          <li>Čtvrtletní konzultace nad výsledky</li>
-        </ul>
-        <a class="btn btn-primary" href="#kontakt">Chci Růst</a>
-      </div>
-    </div>
-    <div class="price-notes">
-      <p>Ceny jsou bez DPH. Minimální doba měsíční péče je 12&nbsp;měsíců. Přesnou cenu potvrdíme po úvodním hovoru podle rozsahu webu.</p>
-      <p>PPC kampaně a&nbsp;grafiku zajistíme přes specialisty z&nbsp;naší lektorské sítě. Cena podle rozsahu.</p>
-    </div>
-  </div>
-</section>
+<pre class="code" aria-label="Výňatek ze souboru llms.txt"><span class="h"># ORTOCENTRUM® Ostrava-Poruba</span>
 
-<section class="block" id="postup">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-no">06</div>
-      <div>
-        <h2>Jak to probíhá</h2>
-      </div>
+&gt; Specializovaná ortopedie v Ostravě. Hlavní web
+&gt; sítě ortopedických ambulancí ORTOCENTRUM® (od roku 1993)
+
+<span class="h">## Služby</span>
+- Léčba sportovních poranění pohybového aparátu
+- Aplikace obohacené krevní plazmy (PRP)
+
+<span class="h">## Objednání</span>
+- K vyšetření je třeba se objednat, nejlépe telefonicky
+- Smluvní pojišťovny: 111 VZP, 201 VoZP, 205 ČPZP,
+  211 ZPMV, 213 RBP
+<span class="c">…</span></pre>
     </div>
-    <ol class="steps">
-      <li><h3>Hovor</h3><p>20 minut zdarma. Zjistíme, odkud k&nbsp;vám chodí zákazníci a&nbsp;co má web umět.</p></li>
-      <li><h3>Návrh a&nbsp;cena</h3><p>Pošleme vám strukturu webu a&nbsp;pevnou cenu. Nic nezačne, dokud neřeknete ano.</p></li>
-      <li><h3>Web k&nbsp;připomínkám</h3><p>Uvidíte hotovou verzi na vlastní adrese, připomínkujete, upravíme.</p></li>
-      <li><h3>Spuštění a&nbsp;první report</h3><p>Web jde ven, zapneme měření. První report přijde po prvním celém měsíci.</p></li>
-    </ol>
   </div>
 </section>
 
 <section class="block" id="kdo">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-no">07</div>
       <div>
         <h2>Kdo vám web udělá</h2>
       </div>
@@ -367,7 +360,7 @@
       <div>
         <h3>Michal Míček</h3>
         <p class="role">Mgr., LL.M. · zakladatel Edu Partners a&nbsp;AIOMARKETING.cz</p>
-        <p>Přes 14 let v&nbsp;e-commerce, fintechu a&nbsp;vzdělávání. V&nbsp;roce 2011 založil Edu Partners, akreditovanou vzdělávací firmu s&nbsp;kurzy v&nbsp;Praze a&nbsp;Ostravě. Dnes školí firmy v&nbsp;práci s&nbsp;umělou inteligencí.</p>
+        <p>Přes 14&nbsp;let v&nbsp;e-commerce, fintechu a&nbsp;vzdělávání. V&nbsp;roce 2011 založil Edu Partners, akreditovanou vzdělávací firmu s&nbsp;kurzy v&nbsp;Praze a&nbsp;Ostravě. Dnes školí firmy v&nbsp;práci s&nbsp;umělou inteligencí.</p>
         <p>Weby a&nbsp;reporty dělá stejným postupem, jaký učí na kurzech. Mluvíte s&nbsp;ním přímo, ne s&nbsp;obchodníkem.</p>
         <p><a href="https://www.linkedin.com/in/michalmicek/">LinkedIn</a> · <a href="https://michalmicek.cz/">michalmicek.cz</a></p>
       </div>
@@ -378,7 +371,6 @@
 <section class="block" id="otazky">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-no">08</div>
       <div>
         <h2>Časté otázky</h2>
       </div>
@@ -394,11 +386,11 @@
       </details>
       <details>
         <summary>Co je soubor llms.txt?</summary>
-        <p>Textový soubor na vašem webu, který AI asistentům stručně a&nbsp;přehledně říká, kdo jste, co nabízíte, kde vás najdou a&nbsp;jak se objednat. Ukázku najdete výše v&nbsp;části 02.</p>
+        <p>Textový soubor na vašem webu, který AI asistentům stručně a&nbsp;přehledně říká, kdo jste, co nabízíte, kde vás najdou a&nbsp;jak se objednat. Ukázku najdete v&nbsp;části „Co se o&nbsp;vás dozví ChatGPT“.</p>
       </details>
       <details>
-        <summary>Proč je minimální doba 12 měsíců?</summary>
-        <p>Výsledky ve vyhledávání se projevují v&nbsp;řádu měsíců, ne týdnů. Díky ročnímu závazku je navíc jednorázová cena za web nižší.</p>
+        <summary>Proč je minimální doba 12&nbsp;měsíců?</summary>
+        <p>Výsledky ve vyhledávání se projevují v&nbsp;řádu měsíců, ne týdnů. Report má smysl, až když je s&nbsp;čím srovnávat.</p>
       </details>
       <details>
         <summary>Už web mám. Můžete ho jen převzít a&nbsp;reportovat?</summary>
@@ -411,10 +403,9 @@
 <section class="contact" id="kontakt">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-no">09</div>
       <div>
-        <h2>Domluvme si 20 minut</h2>
-        <p>Nejrychlejší je zavolat. Můžete také napsat pár vět o&nbsp;své firmě a&nbsp;ozvu se.</p>
+        <h2>Domluvme si 20&nbsp;minut</h2>
+        <p>Nejrychlejší je zavolat. Nebo napište pár vět o&nbsp;své firmě a&nbsp;adresu současného webu, pokud ho máte. Ozveme se.</p>
       </div>
     </div>
     <div class="contact-grid">
@@ -423,18 +414,15 @@
         <a class="mail" href="mailto:michal.micek@edu-partners.cz?subject=Popt%C3%A1vka%20webu%20(AIOMARKETING.cz)" data-track="email_click">michal.micek@edu-partners.cz</a>
         <span class="mono">Michal Míček · Praha a&nbsp;Ostrava</span>
       </div>
-      <form id="poptavka" novalidate>
-        <label for="f-jmeno">Jméno</label>
-        <input id="f-jmeno" name="jmeno" autocomplete="name" required>
-        <label for="f-kontakt">Telefon nebo e-mail</label>
-        <input id="f-kontakt" name="kontakt" autocomplete="tel" required>
-        <label for="f-web">Váš web nebo obor (nepovinné)</label>
-        <input id="f-web" name="web">
-        <label for="f-zprava">Co potřebujete</label>
-        <textarea id="f-zprava" name="zprava"></textarea>
-        <button class="btn btn-primary" type="submit">Připravit e-mail s&nbsp;poptávkou</button>
-        <p class="form-note">Formulář otevře váš e-mailový program s&nbsp;vyplněnou zprávou. Nic se neukládá na tomto webu.</p>
-      </form>
+      <div class="contact-what">
+        <p class="contact-lead">Do e-mailu stačí napsat:</p>
+        <ol>
+          <li>čím se vaše firma zabývá a&nbsp;kde,</li>
+          <li>adresu současného webu, pokud ho máte,</li>
+          <li>kdy se vám hodí zavolat.</li>
+        </ol>
+        <a class="btn btn-primary" href="mailto:michal.micek@edu-partners.cz?subject=Popt%C3%A1vka%20webu%20(AIOMARKETING.cz)" data-track="email_click">Napsat e-mail</a>
+      </div>
     </div>
   </div>
 </section>
@@ -462,22 +450,6 @@
         window.gtag('event', 'faq_open', { question: d.querySelector('summary').textContent.trim() });
       }
     });
-  });
-  var form = document.getElementById('poptavka');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var f = form.elements;
-    if (!f.jmeno.value.trim() || !f.kontakt.value.trim()) {
-      (f.jmeno.value.trim() ? f.kontakt : f.jmeno).focus();
-      return;
-    }
-    var body = 'Jméno: ' + f.jmeno.value.trim() +
-      '\nKontakt: ' + f.kontakt.value.trim() +
-      '\nWeb / obor: ' + f.web.value.trim() +
-      '\n\n' + f.zprava.value.trim();
-    track('form_submit');
-    window.location.href = 'mailto:michal.micek@edu-partners.cz?subject=' +
-      encodeURIComponent('Poptávka webu (AIOMARKETING.cz)') + '&body=' + encodeURIComponent(body);
   });
 })();
 </script>

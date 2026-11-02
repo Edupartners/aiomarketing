@@ -1,6 +1,6 @@
 # AIOMARKETING.cz
 
-> Tvorba webů pro malé firmy, ordinace a služby v České republice. Každý web je připravený pro AI asistenty a vyhledávače (strukturovaná data schema.org, soubor llms.txt), měří poptávky (kliknutí na telefon, e-mail, mapu) a klient každý měsíc dostává report v PDF. E-shopy nedělá.
+> Tvorba webů pro malé firmy, ordinace a služby v České republice. Každý web je připravený pro AI asistenty a vyhledávače (strukturovaná data schema.org, soubor llms.txt), měří zájem zákazníků (kliknutí na telefon, e-mail, mapu) a klient každý měsíc dostává report v PDF. E-shopy nedělá.
 
 Služba společnosti Edu Partners s.r.o. (IČO 28660757, vzdělávací firma založená v roce 2011). Aktualizováno 2026-11-02.
 
