@@ -9,13 +9,12 @@ Služba společnosti Edu Partners s.r.o. (IČO 28660757, vzdělávací firma zal
 - Strukturovaná data (schema.org) a soubor llms.txt pro AI asistenty
 - Měření kliknutí na telefon, e-mail, mapu a otevřených dotazů v Google Analytics 4
 - Měsíční report v PDF s komentářem a 2–3 doporučeními
-- Drobné úpravy údajů během roku
+- Každý měsíc až 30 minut úprav webu podle čísel z reportu
 
-## Ceník (bez DPH, minimální doba měsíční péče 12 měsíců)
-- Start: web 14 900 Kč jednorázově, péče a report 1 490 Kč měsíčně
-- Růst: web 29 900 Kč jednorázově, 2 990 Kč měsíčně; navíc průběžné úpravy obsahu, 1 nový článek nebo odpověď měsíčně, kontrola zmínek v AI asistentech, čtvrtletní konzultace
-- PPC kampaně a grafika přes specialisty z lektorské sítě Edu Partners, cena podle rozsahu
-- Přesná cena se potvrzuje po úvodním hovoru
+## Ceník (bez DPH, minimální doba správy 12 měsíců)
+- Web: od 14 900 Kč jednorázově, přesná cena po úvodním hovoru
+- Správa, měsíční report a až 30 minut úprav webu měsíčně: 399 Kč měsíčně (zaváděcí cena pro prvních 10 klientů, garantovaná 12 měsíců; poté 1 400 Kč měsíčně)
+- Doplňky podle rozsahu: nové články, ověření odpovědí AI asistentů, PPC kampaně a grafika (přes specialisty z lektorské sítě Edu Partners)
 
 ## Reference
 - [ORTOCENTRUM®](https://www.ortocentrumov.cz/): síť ortopedických ambulancí v Ostravě a okolí, 4 weby, strukturovaná data, llms.txt, měření a automatický měsíční report

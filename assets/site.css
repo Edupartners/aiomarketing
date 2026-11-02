@@ -228,3 +228,4 @@ h2 { font-size: clamp(32px, 4.2vw, 52px); line-height: 1.08; max-width: 18em; }
   .btn { width: 100%; text-align: center; }
   .plan .btn { align-self: stretch; }
 }
+.intro-price { margin: -8px 0 22px; padding: 10px 14px; background: var(--marker); color: var(--ink); font-size: 15px; font-weight: 600; }
