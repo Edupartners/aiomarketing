@@ -16,6 +16,9 @@ Služba společnosti Edu Partners s.r.o. (IČO 28660757, vzdělávací firma zal
 - Správa, měsíční report a až 30 minut úprav webu měsíčně: 399 Kč měsíčně (zaváděcí cena pro prvních 10 klientů, garantovaná 12 měsíců; poté 1 400 Kč měsíčně)
 - Doplňky podle rozsahu: nové články, ověření odpovědí AI asistentů, PPC kampaně a grafika (přes specialisty z lektorské sítě Edu Partners)
 
+## Vlastnictví
+- Web i doména patří klientovi jako objednateli.
+
 ## Reference
 - [ORTOCENTRUM®](https://www.ortocentrumov.cz/): síť ortopedických ambulancí v Ostravě a okolí, 4 weby, strukturovaná data, llms.txt, měření a automatický měsíční report
 - [michalmicek.cz](https://michalmicek.cz/): web zakladatele, strukturovaná data, llms.txt, záznam ve Wikidata
